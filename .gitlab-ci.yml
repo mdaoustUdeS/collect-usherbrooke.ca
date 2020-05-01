@@ -1,17 +1,18 @@
-image: alpine
+#image: alpine
 
 stages:
   - download
   - save
   - deploy
 
-before_script:
-  - apk update && apk add wget
-
 download-usherbrooke.ca/coronavirus/:
   stage: download
   script:
+    - apk update && apk add wget
     - ./getUrls.sh
+  artifacts:
+    paths:
+      - html
 
 save-change:
   stage: save
