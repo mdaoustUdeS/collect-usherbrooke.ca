@@ -1,11 +1,11 @@
-#image: alpine
+image: alpine
 
 stages:
   - download
   - save
   - deploy
 
-download-usherbrooke.ca/coronavirus/:
+usherbrooke.ca/coronavirus/:
   stage: download
   script:
     - apk update && apk add wget
@@ -18,6 +18,8 @@ save-change:
   stage: save
   script:
     - echo "Commit will happened here"
+    - git status
+    - git config --global
 
 pages:
   stage: deploy
