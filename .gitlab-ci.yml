@@ -1,14 +1,15 @@
 image: alpine
 
 stages:
+  - install
   - download
   - save
   - deploy
 
 installDependency:
-  stage: download
+  stage: install
   script:
-    - apk update && apk add pandoc
+    - apk update && apk add pandoc wget
 
 download-usherbrooke.ca/coronavirus/:
   stage: download
