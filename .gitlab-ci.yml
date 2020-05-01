@@ -1,12 +1,15 @@
 image: alpine
 
 stages:
+  - install
   - download
   - save
   - deploy
 
-before_script:
-  - apk update && apk add wget
+installDependency:
+  stage: install
+  script:
+    - apk update && apk add wget
 
 download-usherbrooke.ca/coronavirus/:
   stage: download
@@ -21,6 +24,7 @@ save-change:
 pages:
   stage: deploy
   script:
+    - ls -la
     - mv html/ public/
   artifacts:
     paths:
