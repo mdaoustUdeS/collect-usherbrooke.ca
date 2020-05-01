@@ -15,7 +15,7 @@ download-usherbrooke.ca/coronavirus/:
   script:
     - getUrls.sh
 
-commit-change
+save-change:
   stage: save
   script:
     - echo "Commit will happened here"
