@@ -9,7 +9,7 @@ stages:
 installDependency:
   stage: install
   script:
-    - apk update && apk add pandoc wget
+    - apk update && apk add wget
 
 download-usherbrooke.ca/coronavirus/:
   stage: download
