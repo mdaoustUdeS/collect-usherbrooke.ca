@@ -1,0 +1,31 @@
+image: alpine
+
+stages:
+  - download
+  - save
+  - deploy
+
+installDependency:
+  stage: download
+  script:
+    - apk update && apk add pandoc
+
+download-usherbrooke.ca/coronavirus/:
+  stage: download
+  script:
+    - getUrls.sh
+
+commit-change
+  stage: save
+  script:
+    - echo "Commit will happened here"
+
+pages:
+  stage: deploy
+  script:
+    - mv html/ public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
