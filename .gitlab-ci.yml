@@ -1,20 +1,17 @@
 image: alpine
 
 stages:
-  - install
   - download
   - save
   - deploy
 
-installDependency:
-  stage: install
-  script:
-    - apk update && apk add wget
+before_script:
+  - apk update && apk add wget
 
 download-usherbrooke.ca/coronavirus/:
   stage: download
   script:
-    - getUrls.sh
+    - ./getUrls.sh
 
 save-change:
   stage: save
