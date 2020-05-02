@@ -18,6 +18,8 @@ save-change:
   stage: save
   script:
     - apk update && apk add git
+    - git config user.email "$GITLAB_USER_EMAIL"
+    - git config user.name "$GITLAB_USER_NAME"
     - git config --list
     - git config --list --show-origin
     - git status
