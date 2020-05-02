@@ -23,6 +23,9 @@ save-change:
     - git status
     - git add *.html
     - git status
+    - git commit -m "Update $(date +%F) $(date +%R)"
+    - git status
+    - git log --graph
 
 pages:
   stage: deploy
