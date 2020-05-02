@@ -17,7 +17,7 @@ usherbrooke.ca/coronavirus/:
 save-change:
   stage: save
   script:
-    - apk update && apk add wget
+    - apk update && apk add git
     - echo "Commit will happened here"
     - git status
     - git config --global
