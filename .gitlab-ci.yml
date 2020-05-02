@@ -28,6 +28,7 @@ save-change:
     - git commit -m "Update $(date +%F) $(date +%R)"
     - git status
     - git log --graph
+    - git push
 
 pages:
   stage: deploy
