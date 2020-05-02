@@ -20,7 +20,7 @@ save-change:
     - apk update && apk add git
     - git config user.email "$GITLAB_USER_EMAIL"
     - git config user.name "$GITLAB_USER_NAME"
-    - git config --list
+    - git checkout $CI_DEFAULT_BRANCH
     - git config --list --show-origin
     - git status
     - git add *.html
