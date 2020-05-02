@@ -19,7 +19,8 @@ save-change:
   script:
     - apk update && apk add git
     - echo "Commit will happened here"
-    - git config --get-all
+    - git config --list
+    - git config --list --show-origin
     - git status
 
 pages:
