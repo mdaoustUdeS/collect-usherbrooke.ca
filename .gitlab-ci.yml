@@ -19,8 +19,8 @@ save-change:
   script:
     - apk update && apk add git
     - echo "Commit will happened here"
+    - git config --get-all
     - git status
-    - git config --global --get-all
 
 pages:
   stage: deploy
