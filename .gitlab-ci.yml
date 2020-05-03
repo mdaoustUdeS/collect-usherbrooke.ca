@@ -21,7 +21,7 @@ save-change:
     - apk update && apk add git perl
     - echo $CI_BUILD_REPO
 
-    - export CI_PUSH_REPO=`echo $CI_BUILD_REPO | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
+    - export CI_PUSH_REPO=`echo $CI_REPOSITORY_URL | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
     - echo $CI_BUILD_REPO
     - echo $CI_PUSH_REPO
 
