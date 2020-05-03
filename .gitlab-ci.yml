@@ -19,10 +19,10 @@ save-change:
   script:
     - whoami
     - apk update && apk add git perl
-    - echo $CI_BUILD_REPO
+    - echo $CI_REPOSITORY_URL
 
     - export CI_PUSH_REPO=`echo $CI_REPOSITORY_URL | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
-    - echo $CI_BUILD_REPO
+    - echo $CI_REPOSITORY_URL
     - echo $CI_PUSH_REPO
 
     - git checkout $CI_DEFAULT_BRANCH
@@ -31,13 +31,10 @@ save-change:
     - git remote set-url --push origin "${CI_PUSH_REPO}"
     - git config --list --show-origin
     - git pull
-    - git status
     - git add *.html
-    - git status
     - git commit -m "Update $(date +%F) $(date +%R)"
     - git status
-    - git log --graph
-    - git push
+    - git push origin $CI_DEFAULT_BRANCH:${CI_DEFAULT_BRANCH} || true
 
 pages:
   stage: deploy
