@@ -17,11 +17,21 @@ usherbrooke.ca/coronavirus/:
 save-change:
   stage: save
   script:
+    - whoami
+    - printenv
     - apk update && apk add git
-    - git config user.email "$GITLAB_USER_EMAIL"
-    - git config user.name "$GITLAB_USER_NAME"
+    - echo $CI_BUILD_REPO
+
+    - export CI_PUSH_REPO=`echo $CI_BUILD_REPO | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
+    - echo $CI_BUILD_REPO
+    - echo $CI_PUSH_REPO
+
     - git checkout $CI_DEFAULT_BRANCH
+    - git config user.name "$RUNNER_NAME"
+    - git config user.email "$RUNNER_EMAIL"
+    - git remote set-url --push origin "${CI_PUSH_REPO}"
     - git config --list --show-origin
+    - git pull
     - git status
     - git add *.html
     - git status
