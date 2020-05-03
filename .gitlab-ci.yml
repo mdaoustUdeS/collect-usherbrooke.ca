@@ -25,7 +25,7 @@ save-change:
     - git add *.html
     - git commit -m "Update $(date +%F) $(date +%R)"
     - git status
-    - git push https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/COVID-update/collect-usherbrooke.ca.git $CI_DEFAULT_BRANCH
+    - git push || true
 
 pages:
   stage: deploy
