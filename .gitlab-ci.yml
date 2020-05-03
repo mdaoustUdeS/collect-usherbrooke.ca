@@ -18,8 +18,7 @@ save-change:
   stage: save
   script:
     - whoami
-    - printenv
-    - apk update && apk add git
+    - apk update && apk add git perl
     - echo $CI_BUILD_REPO
 
     - export CI_PUSH_REPO=`echo $CI_BUILD_REPO | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
