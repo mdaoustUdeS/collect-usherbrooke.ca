@@ -11,3 +11,8 @@ wget le site au complet à toutes les 5 minutes et commit lorsqu'il y a des chan
 ## Collaboration
 
 N'hésitez pas à suggérer des idées d'améliorations!
+
+## Roadmap
+
+- [ ] Add https://www.usherbrooke.ca/genie/faculte/coronavirus/
+- [ ] Add https://www.usherbrooke.ca/ssdp/fr/etudiants/coronavirus-faq/
