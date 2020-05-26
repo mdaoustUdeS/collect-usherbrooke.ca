@@ -15,8 +15,8 @@ jobs:
     steps:
       - shell: bash
         run: |
-          - apk update && apk add wget
-          - ./getUrls.sh
+          apk update && apk add wget
+          ./getUrls.sh
       - name: Upload website to artifact
         uses: actions/upload-artifact@v2
         with:
