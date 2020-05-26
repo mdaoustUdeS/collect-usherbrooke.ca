@@ -16,7 +16,6 @@ jobs:
       - uses: actions/checkout@v2
       - shell: bash
         run: |
-          apk update && apk add wget
           ./getUrls.sh
       - name: Upload website to artifact
         uses: actions/upload-artifact@v2
@@ -34,11 +33,11 @@ jobs:
           path: html
       - name: Commit files
         run: |
-          - git config user.email "action@github.com"
-          - git config user.name "GitHub Action"
-          - git add *.html
-          - git commit -m "Update $(date +%F) $(date +%R)"
-          - git status
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add *.html
+          git status
+          git status
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
         with:
