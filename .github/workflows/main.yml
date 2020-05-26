@@ -38,7 +38,7 @@ jobs:
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add *.html
-          git status
+          git commit -m "Update $(date +%F) $(date +%R)"
           git status
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
