@@ -13,6 +13,7 @@ jobs:
     name: usherbrooke.ca/coronavirus
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - shell: bash
         run: |
           apk update && apk add wget
