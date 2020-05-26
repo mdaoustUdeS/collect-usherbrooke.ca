@@ -34,6 +34,7 @@ jobs:
           name: html
           path: html
       - name: Commit files
+        continue-on-error: true
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
