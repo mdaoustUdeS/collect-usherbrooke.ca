@@ -14,5 +14,6 @@ N'hésitez pas à suggérer des idées d'améliorations!
 
 ## Roadmap
 
-- [ ] Add https://www.usherbrooke.ca/genie/faculte/coronavirus/
+- [x] ~Add https://www.usherbrooke.ca/~ (2020-05-26)
+- [x] ~Add https://www.usherbrooke.ca/genie/faculte/coronavirus/~ (2020-05-27)
 - [ ] Add https://www.usherbrooke.ca/ssdp/fr/etudiants/coronavirus-faq/
