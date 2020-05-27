@@ -6,7 +6,7 @@ L'université met à jour de l'information en lien avec la COVID-19, mais on ne 
 
 ## Solution
 
-`wget` le site au complet à toutes les 5 minutes et commit lorsqu'il y a des changements!
+`wget` le site au complet à toutes les heures et commit lorsqu'il y a des changements!
 
 ## Collaboration
 
