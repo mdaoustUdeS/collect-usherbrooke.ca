@@ -17,3 +17,4 @@ N'hésitez pas à suggérer des idées d'améliorations!
 - [x] ~Add https://www.usherbrooke.ca/coronavirus/~ (2020-05-26)
 - [x] ~Add https://www.usherbrooke.ca/genie/faculte/coronavirus/~ (2020-05-27)
 - [ ] Add https://www.usherbrooke.ca/ssdp/fr/etudiants/coronavirus-faq/
+- [ ] Add https://www.usherbrooke.ca/biblio/fermeture-covid19/mise-a-jour/
