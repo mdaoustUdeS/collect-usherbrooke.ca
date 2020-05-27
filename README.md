@@ -6,7 +6,7 @@ L'université met à jour de l'information en lien avec la COVID-19, mais on ne 
 
 ## Solution
 
-wget le site au complet à toutes les 5 minutes et commit lorsqu'il y a des changements!
+`wget` le site au complet à toutes les 5 minutes et commit lorsqu'il y a des changements!
 
 ## Collaboration
 
@@ -16,5 +16,6 @@ N'hésitez pas à suggérer des idées d'améliorations!
 
 - [x] ~Add https://www.usherbrooke.ca/coronavirus/~ (2020-05-26)
 - [x] ~Add https://www.usherbrooke.ca/genie/faculte/coronavirus/~ (2020-05-27)
-- [ ] Add https://www.usherbrooke.ca/ssdp/fr/etudiants/coronavirus-faq/
+- [x] ~Add https://www.usherbrooke.ca/ssdp/fr/etudiants/coronavirus-faq/~ (2020-05-27)
+- [x] ~Add https://www.usherbrooke.ca/ssdp/fr/employeurs/coronavirus-faq/~ (2020-05-27)
 - [ ] Add https://www.usherbrooke.ca/biblio/fermeture-covid19/mise-a-jour/
