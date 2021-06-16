@@ -1,5 +1,5 @@
 host="usherbrooke.ca"
-acceptedFiles=".html"
+acceptedFiles=".html,.jpg"
 outputDirectory=html
 
 url="https://www.usherbrooke.ca/coronavirus/"
@@ -23,5 +23,5 @@ includedDirectories="genie/faculte/coronavirus"
 wget -rD $host -k -l1 --accept $acceptedFiles --include $includedDirectories --directory-prefix=$outputDirectory -- $url
 
 url="https://www.usherbrooke.ca/hebergement/covid/"
-includedDirectories="hebergement/covid"
+includedDirectories="hebergement/fileadmin"
 wget -rD $host -k -l1 --accept $acceptedFiles --include $includedDirectories --directory-prefix=$outputDirectory -- $url
