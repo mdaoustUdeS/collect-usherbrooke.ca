@@ -19,3 +19,4 @@ N'hésitez pas à suggérer des idées d'améliorations!
 - [x] ~Add https://www.usherbrooke.ca/ssdp/fr/etudiants/coronavirus-faq/~ (2020-05-27)
 - [x] ~Add https://www.usherbrooke.ca/ssdp/fr/employeurs/coronavirus-faq/~ (2020-05-27)
 - [x] ~Add https://www.usherbrooke.ca/biblio/fermeture-covid19/mise-a-jour/~ (2020-05-27)
+- [ ] Add https://www.usherbrooke.ca/hebergement/covid/
