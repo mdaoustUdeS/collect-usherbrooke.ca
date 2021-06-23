@@ -1,5 +1,5 @@
 host="usherbrooke.ca"
-acceptedFiles=".html,.jpg"
+acceptedFiles=".html,.jpg,.pdf"
 outputDirectory=html
 
 url="https://www.usherbrooke.ca/coronavirus/"
