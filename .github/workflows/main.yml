@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
-          git add -f *.html
+          git add -f *
           git commit -m "Update $(date +%F) $(date +%R)"
 
       - name: GitHub Push
