@@ -6,22 +6,6 @@ url="https://www.usherbrooke.ca/coronavirus/"
 includedDirectories="coronavirus"
 wget -rD $host -k -l1 --accept $acceptedFiles --include $includedDirectories --directory-prefix=$outputDirectory -- $url
 
-url="https://www.usherbrooke.ca/biblio/fermeture-covid19/mise-a-jour/"
-includedDirectories="biblio/fermeture-covid19"
-wget -rD $host -k -l1 --accept $acceptedFiles --include $includedDirectories --directory-prefix=$outputDirectory -- $url
-
-url="https://www.usherbrooke.ca/ssdp/fr/etudiants/coronavirus-faq/"
-includedDirectories="ssdp/fr/etudiants/coronavirus-faq"
-wget -rD $host -k -l1 --accept $acceptedFiles --include $includedDirectories --directory-prefix=$outputDirectory -- $url
-
-url="https://www.usherbrooke.ca/ssdp/fr/employeurs/coronavirus-faq/"
-includedDirectories="ssdp/fr/employeurs/coronavirus-faq"
-wget -rD $host -k -l1 --accept $acceptedFiles --include $includedDirectories --directory-prefix=$outputDirectory -- $url
-
-url="https://www.usherbrooke.ca/genie/faculte/coronavirus/"
-includedDirectories="genie/faculte/coronavirus"
-wget -rD $host -k -l1 --accept $acceptedFiles --include $includedDirectories --directory-prefix=$outputDirectory -- $url
-
 #url="https://www.usherbrooke.ca/hebergement/covid/"
 #includedDirectories="hebergement/fileadmin"
 #wget -rD $host -k -l1 --accept $acceptedFiles --include $includedDirectories --directory-prefix=$outputDirectory -- $url
